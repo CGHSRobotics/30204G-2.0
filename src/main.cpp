@@ -1,32 +1,14 @@
-#include "main.h"
-
-/*
- *	#define declarations (for controller)
- */
-
- /*
-  *	CGHS namespace where all your variables and functions are
-  */
-namespace cghs {
-
-
-	// Port Numbers, Keep defined here for ease of changing them
-	// Make negative if the motor is reversed
-	int PORT_CHASSIS_LEFT_FRONT = 1;
-	int PORT_CHASSIS_LEFT_BACK = 1;
-	int PORT_CHASSIS_RIGHT_FRONT = 1;
-	int PORT_CHASSIS_RIGHT_BACK = 1;
-}
+#include "gteam.h"
 
 
 // Chassis constructor
 Drive chassis(
 
 	// Left Chassis Ports (negative port will reverse it!)
-	{ cghs::PORT_CHASSIS_LEFT_FRONT, cghs::PORT_CHASSIS_LEFT_BACK }
+	{ Gteam::PORT_CHASSIS_LEFT_FRONT, Gteam::PORT_CHASSIS_LEFT_BACK }
 
 	// Right Chassis Ports (negative port will reverse it!)
-	, { cghs::PORT_CHASSIS_RIGHT_FRONT, cghs::PORT_CHASSIS_RIGHT_BACK }
+	, { Gteam::PORT_CHASSIS_RIGHT_FRONT, Gteam::PORT_CHASSIS_RIGHT_BACK }
 
 	// IMU Port
 	, 20

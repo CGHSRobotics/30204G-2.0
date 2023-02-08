@@ -1,6 +1,10 @@
 #include "main.h"
 
+namespace cghs {
+	int num;
+}
 
+cghs::num = 5;
 // Chassis constructor
 Drive chassis (
   // Left Chassis Ports (negative port will reverse it!)

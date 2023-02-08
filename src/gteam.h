@@ -27,6 +27,29 @@ namespace Gteam {
 	const int PORT_CHASSIS_LEFT_BACK = 1;
 	const int PORT_CHASSIS_RIGHT_FRONT = 1;
 	const int PORT_CHASSIS_RIGHT_BACK = 1;
+
+
+	/*
+	 *	Function Declarations
+	 */
+
+	/**
+	 * 	@brief Spins a given motor by given percent voltage
+	 *
+	 *	@param motor
+	 *		Motor to spin
+	 *
+	 *	@param percent
+	 *		Percent to spin Motor by, from -100 to 100
+	 *
+	*/
+	void spinMotors(pros::Motor motor, float percent);
+
+	/**
+	 *	@brief
+	*/
+	void resetMotors();
+
 }
 
 #endif

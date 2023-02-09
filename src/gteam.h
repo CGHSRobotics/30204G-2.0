@@ -24,9 +24,14 @@ namespace Gteam {
 	*	Make negative if the motor is reversed
 	*/
 	const int PORT_CHASSIS_LEFT_FRONT = 1;
+	const int PORT_CHASSIS_LEFT_CENTER = 1;
 	const int PORT_CHASSIS_LEFT_BACK = 1;
 	const int PORT_CHASSIS_RIGHT_FRONT = 1;
+	const int PORT_CHASSIS_RIGHT_CENTER = 1;
 	const int PORT_CHASSIS_RIGHT_BACK = 1;
+
+	const int PORT_LAUNCHER = 1;
+	const int PORT_INTAKE = 1;
 
 
 	/*
@@ -43,12 +48,17 @@ namespace Gteam {
 	 *		Percent to spin Motor by, from -100 to 100
 	 *
 	*/
-	void spinMotors(pros::Motor motor, float percent);
+	void spinMotor(pros::Motor motor, float percent);
 
 	/**
 	 *	@brief
 	*/
 	void resetMotors();
+
+
+	void intakeToggle(bool enabled);
+
+
 
 }
 

@@ -5,10 +5,10 @@
 Drive chassis(
 
 	// Left Chassis Ports (negative port will reverse it!)
-	{ Gteam::PORT_CHASSIS_LEFT_FRONT, Gteam::PORT_CHASSIS_LEFT_BACK }
+	{ Gteam::PORT_CHASSIS_LEFT_FRONT, Gteam::PORT_CHASSIS_LEFT_CENTER, Gteam::PORT_CHASSIS_LEFT_BACK }
 
 	// Right Chassis Ports (negative port will reverse it!)
-	, { Gteam::PORT_CHASSIS_RIGHT_FRONT, Gteam::PORT_CHASSIS_RIGHT_BACK }
+	, { Gteam::PORT_CHASSIS_RIGHT_FRONT, Gteam::PORT_CHASSIS_RIGHT_CENTER, Gteam::PORT_CHASSIS_RIGHT_BACK }
 
 	// IMU Port
 	, 20
@@ -17,7 +17,7 @@ Drive chassis(
 	, 2.5
 
 	// Cartridge RPM
-	, 1200
+	, 200
 
 	// External Gear Ratio (MUST BE DECIMAL)
 	, 0.6
